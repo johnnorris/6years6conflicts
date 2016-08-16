@@ -1,0 +1,18 @@
+{% extends "layout.nunjucks" %}
+{% import "macros/conflict.nunjucks" as conflict %}
+
+{% set number = 'iii' %}
+{% set name = 'Bahrain' %}
+{% set years = '2013' %}
+
+{% block content %}
+
+{{ conflict.hero(name) }}
+
+<div id="page" class="content">
+    {{ conflict.title(number, name, years) }}
+
+    {{ conflict.body("It was put clear to him that we wanted to go the the front line this morning so thats where he took us. You couldn't get any closer than this. We stepped out the car and four rounds went off. Three were nothing to worry about, probably a few feet away. But one wasn't. It zinged over our head by a few inches I'd say, hitting the wall behind us kicking up a whole load of concrete and dust. The noise is a reassuring thing because you know it didn't hit you. We ran low and fast over to a building and stayed there for a few minutes. We headed up the stairs and kept our heads down. I think the rebels who were shooting their AK47’s were so shocked to see two pasty journalists standing next to them they just didn't know what to do. They stopped firing, looked at us with a huge smile and gave the peace sign. One of them shouts something in arabic which", '23.04.11 Misrata, Libya') }}
+</div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<header class="home">
+    <h1>Six Years <br>Six Conflicts</h1>
+    <h2>An exhibition by Rick Findler.</h2>
+    <h3>21st to 30th October in London.</h3>
+
+    <a href="#conflicts" class="button button-outline">The Conflicts</a>
+    <a href="/exhibition" class="button button-outline">The Exhibition</a>
+</header>
+
+{% endblock %}

@@ -1,0 +1,90 @@
+/* TODO import Cabin */
+
+body {
+    text-align: center;
+    font-size: $font-body;
+    line-height: 1.3;
+    color: $grey-33;
+    font-family: 'Gill Sans', 'Gill Sans MT', Cabin, Calibri, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
+h1, .h1 { font-size: $font-h1; }
+h2, .h2 { font-size: $font-h2; }
+h3, .h3 { font-size: $font-h3; }
+h4, .h4 { font-size: $font-h4; }
+h5, .h5 { font-size: $font-h5; }
+
+small {
+    font-size: $font-small;
+}
+
+#page {
+    p:first-of-type:first-letter {
+        float: left;
+        margin: -0.0625em 0.125em -0.125em 0;
+        font-size: $font-h1;
+        line-height: 1em;
+    }
+}
+
+blockquote {
+    margin: 0;
+
+    font-size: $font-h5;
+    color: $grey-33;
+
+    &:before {
+        content: open-quote;
+
+        float: left;
+
+        margin-right: 0.125em;
+        margin-bottom: -0.5em;
+
+        font-size: $font-hero-4;
+        line-height: 1;
+    }
+
+    p {
+      &:before, &:after {
+        content: '…';
+      }
+    }
+
+    cite {
+      display: block;
+      margin-top: $gutter/2;
+      &:before {
+        content: '—';
+      }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1, .h1 { font-size: $font-h2; }
+    h2, .h2 { font-size: $font-h3; }
+    h3, .h3 { font-size: $font-h4; }
+    h4, .h4 { font-size: $font-h5; }
+
+    blockquote {
+        font-size: $font-h5;
+
+        &:before {
+          font-size: $font-h1;
+        }
+    }
+
+    #page {
+        p:first-of-type:first-letter {
+            font-size: $font-h2;
+        }
+    }
+}

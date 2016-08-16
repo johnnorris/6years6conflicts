@@ -1,0 +1,50 @@
+.footer {
+    color: $grey-CC;
+    background: $grey-33;
+
+    a {
+        display: inline-block;
+
+        &, &:hover, &:active, &:visited {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $grey-CC;
+        }
+
+        &:before {
+            content: '•';
+            margin: 0 10px 0 5px;
+        }
+
+        &:first-child:before {
+            display: none;
+        }
+    }
+
+    small {
+        display: block;
+        margin-top: $gutter;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .footer {
+        small {
+            margin-top: -23px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer a {
+        display: block;
+
+        &:before {
+            display: inline !important;
+        }
+    }
+}

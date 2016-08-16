@@ -1,0 +1,20 @@
+{% macro hero(name) %}
+<div class="conflict selected conflict--hero conflict--{{ name }}"></div>
+{% endmacro %}
+
+{% macro title(number, location, years) %}
+<h1 class="h4 conflict-title">
+    <span class="conflict-number">{{ number }}</span>
+    <span class="conflict-name h2">{{ location }}</span>
+    <span class="conflict-year">{{ years }}</span>
+</h1>
+{% endmacro %}
+
+{% macro body(quote, details) %}
+<blockquote>
+  <p>
+    {{ quote }}
+  </p>
+  <cite>Rick, {{ details }}.</cite>
+</blockquote>
+{% endmacro %}

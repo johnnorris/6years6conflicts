@@ -1,0 +1,20 @@
+{
+  "name": "6years6conflicts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp && cd public && open http://localhost:6789 && python -m SimpleHTTPServer 6789",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {
+    "gulp-image-resize": "^0.10.0",
+    "gulp-nunjucks-render": "^2.0.0"
+  }
+}

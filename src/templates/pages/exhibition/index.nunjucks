@@ -1,0 +1,14 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<div id="page" class="content">
+    <h1>The Exhibition</h1>
+    <h2>21st to 20th October</h2>
+
+    <p>PDT and is available in the United States, Canada (excluding Quebec), and the UK only to Adobe Creative Cloud customers who receive this email directly from Adobe. Offer of a free online video class at CreativeLive.com is valid for only for one (1) of the two (2) following online classes: https://www.creativelive.com/courses/searching-creative-spark-julianne-kost-chris-orwig and/or https://www.creativelive.com/courses/drawing-the-everyday-every-day-with-kate-bingaman-burt. Offer is single use and can only be redeemed for one (1) class per person.</p>
+
+    <p>To redeem this offer, you must have an active CreativeLive.com account or create a new account. Offer cannot be combined with any other coupons or promotions, redeemed for cash or applied to past purchases. Void if copied, altered, transferred, purchased, or sold. Void where prohibited, taxed or restricted. Offer subject to change, modification, or cancellation at any time without notice including without limitation in the event of any human or technical error of any kind relating to the offer. Use of offer in any manner not consistent with these terms constitutes fraud and may be prosecuted. Redemption subject to review and verification. Additional exclusions may apply. All purchases on CreativeLive.com are subject to CreativeLive's Terms of Use and Privacy Policy.</p>
+</div>
+
+{% endblock %}

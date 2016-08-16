@@ -1,0 +1,8 @@
+.hidden {
+    position: absolute;
+    top: $off-page;
+    left: $off-page;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

@@ -1,0 +1,22 @@
+.content {
+    clear: left;
+    max-width: 35em;
+    padding: $gutter;
+
+    @media screen and (max-width: 320px) {
+        padding: $gutter $gutter/2;
+    }
+
+    margin: 0 auto;
+    text-align: left;
+}
+
+#page {
+    &:after {
+        content: '...';
+        display: block;
+        margin: $gutter 0;
+        text-align: center;
+        font-size: $font-h3;
+    }
+}

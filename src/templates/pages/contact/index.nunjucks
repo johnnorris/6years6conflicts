@@ -1,0 +1,11 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<div id="page" class="content">
+    <h1>Contact</h1>
+
+    <a href="mailto:info@6years6conflicts.co.uk">email Rick</a>
+</div>
+
+{% endblock %}
