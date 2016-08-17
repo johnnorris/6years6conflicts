@@ -48,7 +48,7 @@
         }
     }
 
-    &-title {
+    &-title, &-subtitle {
         text-align: center;
     }
 
@@ -71,41 +71,64 @@
 
     &--hero {
         height: 60vh;
+        border-bottom: solid 2vh transparent;
+        cursor: pointer;
+
+        &.zoom {
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          width: 100vw;
+          z-index: 1000;
+        }
     }
 
     &--Libya {
         background-image: url('/img/Libya.jpg');
         background-size: cover;
         background-position: 95% 15%;
+
+        &.conflict--hero { border-color: #e5edf0; }
     }
 
     &--Syria {
         background-image: url('/img/Syria.jpg');
         background-size: cover;
         background-position: 80% 50%;
+
+        &.conflict--hero { border-color: #deecec; }
     }
 
     &--Bahrain {
         background-image: url('/img/Bahrain.jpg');
         background-size: cover;
         background-position: 20% 60%;
+
+        &.conflict--hero { border-color: #f6e8e7; }
     }
 
     &--Somalia {
         background-image: url('/img/Somalia.jpg');
         background-size: cover;
         background-position: 49% 40%;
+
+        &.conflict--hero { border-color: #e3e5e6; }
     }
 
     &--Iraq {
         background-image: url('/img/Iraq.jpg');
         background-size: cover;
         background-position: center center;
+
+        &.conflict--hero { border-color: #f6e9d7; }
     }
 
     &--Burundi {
         background-image: url('/img/Burundi.jpg');
         background-size: cover;
         background-position: 60% 20%;
+
+        &.conflict--hero { border-color: #e8f6ee; }
     }
 }

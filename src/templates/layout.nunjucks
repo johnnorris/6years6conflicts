@@ -1,3 +1,5 @@
+{% import "macros/conflict.nunjucks" as conflict %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +11,8 @@
 </head>
 <body>
     <nav class="nav">
-        <a href="/" class="nav-logo">Six Years Six Conflicts</a>
-        <a href="#intro" class="nav-intro">Intro</a>
+        <span class="nav-logo">Six Years Six Conflicts</span>
+        <a href="/" class="nav-intro">Intro</a>
         <a href="#conflicts" class="nav-conflicts">The Conflicts</a>
         <a href="/exhibition" class="nav-exhibition">The Exhibition</a>
         <a href="/contact" class="nav-contact">Contact</a>
@@ -18,62 +20,7 @@
 
     {% block content %}{% endblock %}
 
-    <ol class="conflicts" id="conflicts">
-        <li>
-            <a href="/libya" class="conflict conflict--Libya">
-                <span class="conflict-details">
-                    <span class="conflict-number">i</span>
-                    <span class="conflict-name">Libya</span>
-                    <span class="conflict-year">2011</span>
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="/syria" class="conflict conflict--Syria">
-                <span class="conflict-details">
-                    <span class="conflict-number">ii</span>
-                    <span class="conflict-name">Syria</span>
-                    <span class="conflict-year">2012-13</span>
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="/bahrain" class="conflict conflict--Bahrain">
-                <span class="conflict-details">
-                    <span class="conflict-number">iii</span>
-                    <span class="conflict-name">Bahrain</span>
-                    <span class="conflict-year">2013</span>
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="/somalia" class="conflict conflict--Somalia">
-                <span class="conflict-details">
-                    <span class="conflict-number">iv</span>
-                    <span class="conflict-name">Somalia</span>
-                    <span class="conflict-year">2014</span>
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="/iraq" class="conflict conflict--Iraq">
-                <span class="conflict-details">
-                    <span class="conflict-number">v</span>
-                    <span class="conflict-name">Iraq</span>
-                    <span class="conflict-year">2013-16</span>
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="/burundi" class="conflict conflict--Burundi">
-                <span class="conflict-details">
-                    <span class="conflict-number">vi</span>
-                    <span class="conflict-name">Burundi</span>
-                    <span class="conflict-year">2015</span>
-                </span>
-            </a>
-        </li>
-    </ol>
+    {{ conflict.conflicts() }}
 
     <footer class="footer">
         <div class="content">

@@ -12,7 +12,19 @@
 <div id="page" class="content">
     {{ conflict.title(number, name, years) }}
 
-    {{ conflict.body("It was put clear to him that we wanted to go the the front line this morning so thats where he took us. You couldn't get any closer than this. We stepped out the car and four rounds went off. Three were nothing to worry about, probably a few feet away. But one wasn't. It zinged over our head by a few inches I'd say, hitting the wall behind us kicking up a whole load of concrete and dust. The noise is a reassuring thing because you know it didn't hit you. We ran low and fast over to a building and stayed there for a few minutes. We headed up the stairs and kept our heads down. I think the rebels who were shooting their AK47’s were so shocked to see two pasty journalists standing next to them they just didn't know what to do. They stopped firing, looked at us with a huge smile and gave the peace sign. One of them shouts something in arabic which", '23.04.11 Misrata, Libya') }}
+    {{ conflict.subtitle("Free Syrian Army rebels try and take control of a Syrian Military&nbsp;Airbase.") }}
+
+    {{
+      conflict.body(
+        "<p>…and Zaher then mentions to us that the regime has seen us, and that we are trapped. We look back at the corner we had just ran from as it starts to disintegrate in a cloud of dust. Bullet after bullet screams through the field. You hear them cut through the blades of grass five feet from the end of your fingers as you remain on all fours. My hands start shaking uncontrollably and my legs feel weaker than jelly after all that running. I thought adrenalin was supposed to make you stronger and faster for 'fight or flight'. This wasn't. This was just making me want to shit myself.</p>
+
+        <p>I try and swallow but there is nothing in my mouth to swallow. I try my hardest to calm myself down and recompose. I thought to myself if I am going to die now, I may as well be trying to take good pictures when I do. I manage to get to my feet and walk slowly and lowly toward Abu and Benji. I watch as one of our men runs back across the field with a 50 calibre machine gun as bullets zing past him and hit the wall behind him. As I am sliding myself against the wall my foot gets caught in barbed-wire and I am resorted to jumping around on one foot as I try and untangle myself. There I am in the middle of incoming fire, and instead of taking pictures I'm busy dancing around like a bloody ballerina. The guy behind me has to tell me to stand still as he untangles this English idiot from a bit of metal wiring.</p>
+
+        <p>Bullets carry on cutting through the air. As soon as you hear the snap of the gun the bullet is hitting the wall 10 feet from you…</p>",
+
+        'Minagh Military Airbase, Syria: 17th&nbsp;January&nbsp;2013'
+      )
+    }}
 </div>
 
 {% endblock %}

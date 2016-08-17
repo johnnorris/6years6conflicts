@@ -2,6 +2,10 @@
     color: $grey-CC;
     background: $grey-33;
 
+    .content {
+      max-width: 100%;
+    }
+
     a {
         display: inline-block;
 

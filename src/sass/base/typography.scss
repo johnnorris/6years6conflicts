@@ -26,8 +26,12 @@ small {
     font-size: $font-small;
 }
 
+.break {
+    word-break: break-all;
+}
+
 #page {
-    p:first-of-type:first-letter {
+    p.intro {
         float: left;
         margin: -0.0625em 0.125em -0.125em 0;
         font-size: $font-h1;
@@ -36,7 +40,7 @@ small {
 }
 
 blockquote {
-    margin: 0;
+    margin: $gutter 0 0;
 
     font-size: $font-h5;
     color: $grey-33;
@@ -46,17 +50,12 @@ blockquote {
 
         float: left;
 
+        margin-top: -0.125em;
         margin-right: 0.125em;
         margin-bottom: -0.5em;
 
         font-size: $font-hero-4;
-        line-height: 1;
-    }
-
-    p {
-      &:before, &:after {
-        content: '…';
-      }
+        line-height: 0.9;
     }
 
     cite {
@@ -75,15 +74,15 @@ blockquote {
     h4, .h4 { font-size: $font-h5; }
 
     blockquote {
-        font-size: $font-h5;
+        font-size: 18px;
 
         &:before {
-          font-size: $font-h1;
+          font-size: $font-hero-4;
         }
     }
 
     #page {
-        p:first-of-type:first-letter {
+        p.intro {
             font-size: $font-h2;
         }
     }

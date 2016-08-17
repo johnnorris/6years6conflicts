@@ -12,7 +12,27 @@
 <div id="page" class="content">
     {{ conflict.title(number, name, years) }}
 
-    {{ conflict.body("It was put clear to him that we wanted to go the the front line this morning so thats where he took us. You couldn't get any closer than this. We stepped out the car and four rounds went off. Three were nothing to worry about, probably a few feet away. But one wasn't. It zinged over our head by a few inches I'd say, hitting the wall behind us kicking up a whole load of concrete and dust. The noise is a reassuring thing because you know it didn't hit you. We ran low and fast over to a building and stayed there for a few minutes. We headed up the stairs and kept our heads down. I think the rebels who were shooting their AK47’s were so shocked to see two pasty journalists standing next to them they just didn't know what to do. They stopped firing, looked at us with a huge smile and gave the peace sign. One of them shouts something in arabic which", '23.04.11 Misrata, Libya') }}
+    {{ conflict.subtitle("Terrorist group Al-Shabaab attacks Mogadishu’s&nbsp;Parliament.") }}
+
+    {{
+      conflict.body(
+        "<p>Suleiman burst into the office, “<em>Ok ok ok, you guys ready? Let’s go we have a convoy.</em>”</p>
+
+        <p>Cue adrenalin. Cue an immediate strive for the last sip of water at the bottom of your glass to wet those lips that have become so dry so quickly. Cue an emphatic sense of excitement and a heightened sense of awareness, cue pocket checks and camera checks, memory cards, RISC first aid kit, tourniquet, batteries, armour, Benji, flapjack, lock stock, the fucking lot.</p>
+
+        <p>We raced outside and into the convoy. Benji, Suleiman, two AMISOM Ugandan soldiers, and two AMISOM camera guys. We joked and messed around in the truck, taking pictures of each other, smiling, chewing gum, laughing, pushing, “<em>did you remember your make-up?</em>”, “<em>Don’t start crying like you did last time</em>”, “<em>here take my picture</em>”, “<em>piss off you take mine</em>”.</p>
+
+        <p>“<em>Two minutes from landing</em>” Suli shouted, and soon everything became a lot quieter. Like that scene at the beginning of Predator when they’re all in the aeroplane about to be dropped into the jungle. Everyone clearly having their own thoughts and coping mechanisms to deal with whatever they’re feeling.</p>
+
+        <p>“<em>Going through the first perimeter now.</em>” Suli then shouted as we passed a manned checkpoint and a mix of general public trying to see further up the road to where we were headed.</p>
+
+        <p>“<em>Ok here is the story - we think there are three Al-shabaab guys in there, they used a car bomb to blow the entrance gates up and now they are shooting from the windows of the building. So just watch out when you get out the truck.</em>”</p>
+
+        <p>We turned into the driveway that leads up the hill toward the dominating building. Past what seemed to be the remains of an engine block, lots of twisted metal and a few body parts. We pull right up to the building as close as we can and the back doors swing open to reveal about 20 Ugandan soldiers, heavily armed, watching the horizon and ushering us to get against the wall. Shots, bangs and booms come screaming out the building. As we get our bearings and try to understand where we are and what our surroundings are, another huge AMISOM vehicle pulls up and out gets another 20 heavily armed Ugandan soldiers who run down a long dark corridor leading into the sieged parliamentary building.</p>",
+
+        'Mogadishu, Somalia: 26th May 2014'
+      )
+    }}
 </div>
 
 {% endblock %}

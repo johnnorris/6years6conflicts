@@ -12,7 +12,34 @@
 <div id="page" class="content">
     {{ conflict.title(number, name, years) }}
 
-    {{ conflict.body("It was put clear to him that we wanted to go the the front line this morning so thats where he took us. You couldn't get any closer than this. We stepped out the car and four rounds went off. Three were nothing to worry about, probably a few feet away. But one wasn't. It zinged over our head by a few inches I'd say, hitting the wall behind us kicking up a whole load of concrete and dust. The noise is a reassuring thing because you know it didn't hit you. We ran low and fast over to a building and stayed there for a few minutes. We headed up the stairs and kept our heads down. I think the rebels who were shooting their AK47’s were so shocked to see two pasty journalists standing next to them they just didn't know what to do. They stopped firing, looked at us with a huge smile and gave the peace sign. One of them shouts something in arabic which", '23.04.11 Misrata, Libya') }}
+    {{ conflict.subtitle("Kurdish Special Forces fight&nbsp;against&nbsp;ISIS.") }}
+
+    {{
+      conflict.body(
+        "<p>It was like a medieval battle. Two opposing sides facing each other, the generals watching from afar as their soldiers battled it out in the fields below them, like a scene from a modern day Braveheart.</p>
+
+        <p>As we watched and listened a helicopter started flying high above us. I turned to one of the soldiers next to me.</p>
+
+        <p>“<em>ISIS?</em>” I asked pointing up at the menacing chopper.</p>
+
+        <p>“<em>No, Iraq</em>” he said shaking his head.</p>
+
+        <p>“<em>Thank god for that</em>” I said, exhaling a sigh of relief. It was nice to know that an Iraqi army helicopter was there for support, and certainly a comforting feeling to know you won’t be on the receiving end of it... or so we thought.</p>
+
+        <p>We jumped back in the car and started to head back, this was only a quick drive in to show us what was happening and that was it, just so we could get an idea of the area. I asked the car to stop as I wanted to walk up and join one of these groups that were on one of these hill tops. We got back out the car and headed up the hill. A row of about 30 soldiers all along the ridge top watched and pointed. Some had binoculars, some had heavy machine guns while others just shielded the glare of the unforgiving sun from their eyes as they peered into the low lying ground.</p>
+
+        <p>I turn around and see three guys huddled around the back-end of a truck, only to realise there was a bloody huge multi-rocket launcher rigged up to the back of it.</p>
+
+        <p>I race down the hill as it looks like they’re about to fire and get in position, changing lenses across from one camera to the next, as one of them doesn’t have a fast enough shutter rate to possibly catch a rocket mid-flight.</p>
+
+        <p>The guys scramble away picking up a device which seems to be linked to the rocket launcher, take a knee in the dirt and watch eagerly. I put my camera up to my eye and <span class='break'>SSCCCRRRRAAAAAASHHHHHHhhhhhhhh</span>, the first rocket flies out. My hands immediately start shaking from the shock of how loud it is combined with the amount of adrenalin thats pumping through my body. As I try and steady the camera the second rocket flies out…</p>
+
+        <p>“<em>Missed it</em>” I said.</p>",
+
+        'Kurdistan, Northern Iraq: 14th&nbsp;June&nbsp;2014'
+      )
+    }}
 </div>
+
 
 {% endblock %}

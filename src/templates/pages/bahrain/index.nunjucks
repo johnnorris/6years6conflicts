@@ -12,7 +12,21 @@
 <div id="page" class="content">
     {{ conflict.title(number, name, years) }}
 
-    {{ conflict.body("It was put clear to him that we wanted to go the the front line this morning so thats where he took us. You couldn't get any closer than this. We stepped out the car and four rounds went off. Three were nothing to worry about, probably a few feet away. But one wasn't. It zinged over our head by a few inches I'd say, hitting the wall behind us kicking up a whole load of concrete and dust. The noise is a reassuring thing because you know it didn't hit you. We ran low and fast over to a building and stayed there for a few minutes. We headed up the stairs and kept our heads down. I think the rebels who were shooting their AK47’s were so shocked to see two pasty journalists standing next to them they just didn't know what to do. They stopped firing, looked at us with a huge smile and gave the peace sign. One of them shouts something in arabic which", '23.04.11 Misrata, Libya') }}
+    {{ conflict.subtitle("Protesters clash with police in anger of injustice, discrimination and&nbsp;corruption.") }}
+
+    {{
+      conflict.body(
+        "<p>Panic entails as these kids turn and run like hell, one still carrying his fire extinguisher and another still carrying an un-lit molotov cocktail. I start running with them but try and regain composure as I stop, turn round and snap these kids running past me until it would seem that I am the last guy there. I turn and join the last few lads as you hear the guns firing about 30 feet away. We all run down a little side street and in through a metal door into someone's house, upstairs and onto the roof.</p>
+
+        <p>I say kids because that's all they are. It was extremely interesting to see that, within this group, the eldest lad could have only been about 17... if that. Some where as young as eight. It certainly came across like this was just a bit of entertainment for them. Where we would go and play football in the park, they would go and taunt the police and have a bit of fun doing it... allbeit with slightly higher risks than a game of footy.</p>
+
+        <p>Up on this roof and roofs in the distance were spotters. Standing there with their heads held high trying to peer down into the alley-ways of side-streets and whispering into their mobile phones. The police had come up the road and were kicking the doors in of the houses we had just ran past. It was only a matter of time before our door was about to be kicked in. We all sit their squatting on the roof listening to the bangs of the doors slamming against the wall as they've been kicked open get louder and louder.</p>
+
+        <p>We all share a look, Benji and I slightly more worried as we definitely don't need to be getting caught any time soon, especially as the Formula One race was well underway and the two 'lost fans' excuse was way past redundant. Then BANG..... the sound of a metal door being violently kicked open came echoing up the empty and hollow stairwell.... our door. </p>",
+
+        'Sitra, Bahrain: 21st&nbsp;April&nbsp;2013'
+      )
+    }}
 </div>
 
 {% endblock %}

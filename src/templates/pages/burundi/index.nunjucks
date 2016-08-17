@@ -12,7 +12,23 @@
 <div id="page" class="content">
     {{ conflict.title(number, name, years) }}
 
-    {{ conflict.body("It was put clear to him that we wanted to go the the front line this morning so thats where he took us. You couldn't get any closer than this. We stepped out the car and four rounds went off. Three were nothing to worry about, probably a few feet away. But one wasn't. It zinged over our head by a few inches I'd say, hitting the wall behind us kicking up a whole load of concrete and dust. The noise is a reassuring thing because you know it didn't hit you. We ran low and fast over to a building and stayed there for a few minutes. We headed up the stairs and kept our heads down. I think the rebels who were shooting their AK47’s were so shocked to see two pasty journalists standing next to them they just didn't know what to do. They stopped firing, looked at us with a huge smile and gave the peace sign. One of them shouts something in arabic which", '23.04.11 Misrata, Libya') }}
+    {{ conflict.subtitle("People protest against President Nkurunziza running for a controversial third&nbsp;term.") }}
+
+    {{
+      conflict.body(
+        "<p>This continued for a few minutes until the police started advancing. Everyone cleared the road. I stayed put, bang in the middle and looked right down the road toward the army of police marching forward. They raised their guns…. CRACK CRACK.
+
+        <p>“<em>Oooo shit</em>” I thought. As I started a quick walk over to the side of the road, toward Gildas and Alex and out of the police's line of sight. We were in no mans land - totally in the middle between the police and protesters… and you know what the protesters have???? Rocks. Lots of them.</p>
+
+        <p>They started raining down all over us - landing on the ground by our feet and banging as they smashed onto the tin roofs around us. I stood there not too bothered, laughing at Gildas and Alex sheltering against the wrong side of a wall.</p>
+
+        <p>There was no other option but to just run out in front of the police, and leg it up the road toward the group, praying that the police don’t decide to open fire. If they do… you’re screwed.</p>
+
+        <p>I ran. With my head down and joined up with the stone throwers. I positioned myself, still in the middle of the road, not so clever now I think about it, and snap away at these guys for a few minutes. Down a side road for a different angle, then another few shots ring out.</p>",
+
+        'Bujumbura, Burundi: 5th&nbsp;June&nbsp;2015'
+      )
+    }}
 </div>
 
 {% endblock %}
