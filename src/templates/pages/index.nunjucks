@@ -1,14 +1,26 @@
 {% extends "layout.nunjucks" %}
 
+{% block title %}
+<title>Six Years Six Conflicts</title>
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Six Years Six Conflicts is an exhibition coming 21st October to 30th October in London.">
+{% endblock %}
+
 {% block content %}
 
 <header class="home">
-    <h1>Six Years <br>Six Conflicts</h1>
-    <h2>An exhibition by Rick Findler.</h2>
-    <h3>21st to 30th October in London.</h3>
+  <div class="content slim">
+    <h1 class="brand">Six&nbsp;Years<br>Six&nbsp;Conflicts</h1>
+    <h2>An exhibition by Rick&nbsp;Findler.</h2>
+    <h3>21st to 30th October in&nbsp;London.</h3>
 
-    <a href="#conflicts" class="button button-outline">The Conflicts</a>
-    <a href="/exhibition" class="button button-outline">The Exhibition</a>
+    <div class="home-nav">
+      <a href="#conflicts" class="button">The Conflicts</a>
+      <a href="/exhibition" class="button">The Exhibition</a>
+    </div>
+  </div>
 </header>
 
 {% endblock %}

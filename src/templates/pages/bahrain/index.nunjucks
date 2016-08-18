@@ -9,7 +9,7 @@
 
 {{ conflict.hero(name) }}
 
-<div id="page" class="content">
+<div id="page" class="content slim">
     {{ conflict.title(number, name, years) }}
 
     {{ conflict.subtitle("Protesters clash with police in anger of injustice, discrimination and&nbsp;corruption.") }}

@@ -17,10 +17,6 @@
 ;(function selectCurrentPage() {
   let path = window.location.pathname;
 
-  if (path.endsWith('/')) {
-    path = path.substring(0, path.length - 1);
-  }
-
   $(`a[href="${path}"]`).addClass('selected');
 }());
 
@@ -34,3 +30,21 @@
   }
 }());
 
+;(function mapClick() {
+  $('body').on('mousedown', '.map', function (e) {
+    $(this).find('iframe').css('pointer-events','auto');
+  });
+}());
+
+;(function randomHomeImage() {
+  const $header = $('header.home');
+
+  if ($header.length > 0) {
+    const conflicts = ['Libya', 'Syria', 'Bahrain', 'Somalia', 'Iraq', 'Burundi'];
+    const number = Math.floor(Math.random() * conflicts.length);
+
+    $header.attr('class', `home conflict--${conflicts[number]}`);
+
+    window.setTimeout(randomHomeImage, 1000 * 10);
+  }
+}());

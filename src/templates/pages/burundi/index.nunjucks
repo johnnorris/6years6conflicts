@@ -9,7 +9,7 @@
 
 {{ conflict.hero(name) }}
 
-<div id="page" class="content">
+<div id="page" class="content slim">
     {{ conflict.title(number, name, years) }}
 
     {{ conflict.subtitle("People protest against President Nkurunziza running for a controversial third&nbsp;term.") }}

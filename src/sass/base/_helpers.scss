@@ -6,3 +6,13 @@
     height: 1px;
     overflow: hidden;
 }
+.divide-top {
+    margin-top: $gutter*2;
+}
+.divide-bottom {
+    margin-bottom: $gutter*2;
+}
+.divide {
+    @extend .divide-top;
+    @extend .divide-bottom;
+}

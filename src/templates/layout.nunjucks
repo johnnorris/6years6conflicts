@@ -4,18 +4,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Libya - Six Years Six Conflicts</title>
+    {% block title %}{% endblock %}
+    {% block description %}{% endblock %}
     <link rel="stylesheet" href="/css/style.css">
-    <meta name="description" content="Libya - Six Years Six Conflicts is an exhibition coming 21st October to 30th October in London.">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
+    <div class="info">
+        <a href="/" class="info-logo brand">Six Years<br>Six Conflicts</a>
+        <a href="/contact/" class="info-tickets"><span class="info-book">Book </span>tickets</a>
+        <span class="info-date">21 - 30 Oct<span class="ober">ober 2016</span></span>
+    </div>
     <nav class="nav">
-        <span class="nav-logo">Six Years Six Conflicts</span>
-        <a href="/" class="nav-intro">Intro</a>
-        <a href="#conflicts" class="nav-conflicts">The Conflicts</a>
-        <a href="/exhibition" class="nav-exhibition">The Exhibition</a>
-        <a href="/contact" class="nav-contact">Contact</a>
+        <a href="#conflicts" class="nav-conflicts"><span><span class="the">The </span>Conflicts</span></a>
+        <a href="/exhibition/" class="nav-exhibition"><span><span class="the">The </span>Exhibition</span></a>
+        <a href="/talk/" class="nav-talk"><span><span class="the">The </span>Talk</span></a>
     </nav>
 
     {% block content %}{% endblock %}
@@ -24,10 +27,10 @@
 
     <footer class="footer">
         <div class="content">
-            <a href="#intro" class="nav-intro">Intro</a>
-            <a href="#conflicts" class="nav-conflicts">The Conflicts</a>
-            <a href="/exhibition" class="nav-exhibition">The Exhibition</a>
-            <a href="/contact" class="nav-contact">Contact</a>
+            <a href="#intro" class="nav-intro"><span>Intro</span></a>
+            <a href="#conflicts" class="nav-conflicts"><span>The Conflicts</span></a>
+            <a href="/exhibition/" class="nav-exhibition"><span>The Exhibition</span></a>
+            <a href="/contact/" class="nav-contact"><span>Contact</span></a>
             <small>
                 &copy; Copyright 2016 Rick Findler
             </small>

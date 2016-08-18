@@ -1,0 +1,57 @@
+.info {
+  display: table;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  font-size: 18px;
+  color: $grey-CC;
+  background: $grey-33;
+
+  text-align: right;
+
+  & > * {
+    padding: $gutter/2;
+  }
+
+  .info-logo {
+    float: left;
+    color: white;
+    padding: 18px 20px 16px;
+  }
+
+  .info-tickets {
+    float: right;
+    color: $white;
+    text-transform: capitalize;
+    background: $red;
+  }
+
+  .info-book {
+    display: none;
+  }
+
+  .info-date {
+    display: none;
+    float: right;
+  }
+
+  .ober {
+    display: none;
+  }
+
+  @media screen and (min-width: 365px) {
+    .info-tickets { text-transform: none; }
+    .info-book { display: inline; }
+  }
+
+  @media screen and (min-width: 410px) {
+    .info-date { display: inline; }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .ober {
+      display: inline;
+    }
+  }
+}

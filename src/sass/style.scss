@@ -8,9 +8,14 @@
 @import 'base/typography';
 
 /* components */
+@import 'components/info';
 @import 'components/nav';
 @import 'components/footer';
 @import 'components/conflict';
+@import 'components/map';
+
+/* pages */
+@import 'pages/home';
 
 /* helpers */
 @import 'base/_helpers';

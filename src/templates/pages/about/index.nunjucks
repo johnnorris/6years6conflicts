@@ -3,11 +3,9 @@
 {% block content %}
 
 <div id="page" class="content slim">
-    <h1>Contact</h1>
+    <h1>Rick Findler</h1>
 
-    <h2>Book tickets</h2>
-
-    <a href="mailto:info@6years6conflicts.co.uk">email Rick</a>
+    <p>What a dude.</p>
 </div>
 
 {% endblock %}

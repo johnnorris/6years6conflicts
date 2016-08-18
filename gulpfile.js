@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var nunjucks = require('gulp-nunjucks-render');
 var imageResize = require('gulp-image-resize');
+const babel = require('gulp-babel');
 
 gulp.task('sass', function() {
     return gulp.src('./src/sass/style.scss')
@@ -22,8 +23,14 @@ gulp.task('nunjucks', function() {
 });
 
 gulp.task('js', function () {
-  return gulp.src('./src/js/**/*.js', {base: './src/js/'})
-  .pipe(gulp.dest('./public/js/'));
+  gulp.src('src/js/script.js')
+    .pipe(babel({
+        presets: ['es2015']
+    }))
+    .pipe(gulp.dest('./public/js/'))
+
+  return gulp.src('./src/js/lib/*.js', {base: './src/js/lib/'})
+    .pipe(gulp.dest('./public/js/lib/'));
 });
 
 gulp.task('img', function () {
