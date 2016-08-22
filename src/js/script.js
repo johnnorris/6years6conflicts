@@ -77,15 +77,21 @@
     function fadeOutVideo() {
         if ($video[0].ended) {
           hideVideo(500);
+        } else {
+          window.setTimeout(fadeOutVideo, 1000);
         }
-
-        window.setTimeout(fadeOutVideo, 1000);
     }
 
     fadeOutVideo();
 
     $hideVideo.click(() => {
       hideVideo(500);
+    });
+
+    $('.footer .nav-intro').click(() => {
+      if (window.localStorage && typeof window.localStorage.removeItem === 'function') {
+        window.localStorage.removeItem('introSeen');
+      }
     });
   }
 }());
