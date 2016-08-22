@@ -1,12 +1,16 @@
 .info {
   display: table;
   width: 100%;
-  position: relative;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
 
   font-size: 18px;
   color: $grey-CC;
-  background: $grey-33;
+  background: $grey-11;
 
   text-align: right;
 

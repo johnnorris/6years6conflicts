@@ -1,3 +1,8 @@
+body {
+  padding-top: $gutter*1.5;
+  background: $grey-11;
+}
+
 .content {
     clear: left;
     max-width: 960px;

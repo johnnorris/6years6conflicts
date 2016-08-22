@@ -1,0 +1,15 @@
+{% extends "layout.nunjucks" %}
+
+{% block title %}
+<title>Conflicts - Six Years Six Conflicts</title>
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Conflicts - Six Years Six Conflicts is an exhibition coming 21st October to 30th October in London.">
+{% endblock %}
+
+{% block content %}
+
+{{ conflict.conflicts() }}
+
+{% endblock %}

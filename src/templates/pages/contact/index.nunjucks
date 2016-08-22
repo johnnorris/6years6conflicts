@@ -1,13 +1,40 @@
 {% extends "layout.nunjucks" %}
 
+
+{% block title %}
+<title>Contact - Six Years Six Conflicts</title>
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Contact - Six Years Six Conflicts is an exhibition coming 21st October to 30th October in London.">
+{% endblock %}
+
 {% block content %}
 
 <div id="page" class="content slim">
-    <h1>Contact</h1>
+  <h1 class="brand">Contact</h1>
 
-    <h2>Book tickets</h2>
+  <p class="lede">If you have any questions, please get in touch with Rick using the details below.</p>
 
-    <a href="mailto:info@6years6conflicts.co.uk">email Rick</a>
+  <h2>Rick Findler</h2>
+  <p>
+    Email: <a href="mailto:info@6years6conflicts.co.uk">info@6years6conflicts.co.uk</a><br>
+    Phone: 07816 352037
+  </p>
+
+  <dl class="divide-top">
+    <dt class="h3">Exhibition</dt>
+    <dd>Six Years Six Conflicts</dd>
+
+    <dt class="h3">Location</dt>
+    <dd>The Republic Gallery, 1 Clove Crescent, E14 2BA</dd>
+
+    <dt class="h3">Dates</dt>
+    <dd>21st - 30th October 2016</dd>
+
+    <dt class="h3">Price</dt>
+    <dd>Exhibition entrance is free, the talk is £5 on the door - <a href="/talk/">book here</a></dd>
+  </dl>
 </div>
 
 {% endblock %}

@@ -1,11 +1,10 @@
-/* TODO import Cabin */
-
 body {
     text-align: center;
     font-size: $font-body;
     line-height: 1.3;
-    color: $grey-33;
-    font-family: 'Gill Sans', 'Gill Sans MT', Cabin, Calibri, sans-serif;
+    color: $grey-EE;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Helvetica Neue', 'Helvetica', Arial, Calibri, sans-serif;
 }
 
 h1,
@@ -26,18 +25,35 @@ h3, .h3 { font-size: $font-h3; }
 h4, .h4 { font-size: $font-h4; }
 h5, .h5 { font-size: $font-h5; }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+h1 {
+  margin-top: 0.5em;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 1em;
+  }
+}
+
 .subheading {
   font-size: $font-h5;
   color: $grey-99;
 
   h1 + & {
-    margin-top: -1em;
+    margin-top: 0.25em;
     margin-bottom: 2em;
   }
 }
 
 .brand {
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -1px;
   line-height: 1;
@@ -62,34 +78,46 @@ small {
     word-break: break-all;
 }
 
+.accent {
+  color: $red;
+}
+
+.tint {
+  color: $grey-99;
+}
+
 a {
   &, &:hover, &:active, &:visited {
       color: inherit;
       text-decoration: none;
   }
-
-  &.button {
-    padding: $gutter/4;
-    color: $white;
-    background: $red-dark;
-  }
-
   #page & {
-    text-decoration: underline;
-    color: $red;
+    color: inherit;
+    border-bottom: solid 1px $red;
 
     &[href^="http"] {
       text-decoration: none;
     }
   }
 
-  .nav &, .footer & {
+  .footer & {
     span {
       border-style: solid;
       border-width: 0 0 1px;
       border-color: $white-5;
     }
   }
+}
+
+a.button, button.button {
+  display: inline-block;
+  padding: $gutter/6 $gutter/3;
+  margin: 0 1px 4px 0;
+  border-radius: 2px;
+  border: 0;
+
+  color: $white;
+  background: $red-dark;
 }
 
 #page {
@@ -105,7 +133,7 @@ blockquote {
     margin: $gutter 0 0;
 
     font-size: $font-h5;
-    color: $grey-33;
+    color: #bbb;
 
     &:before {
         content: open-quote;
@@ -117,16 +145,25 @@ blockquote {
         margin-bottom: -0.5em;
 
         font-size: $font-hero-4;
+        font-weight: normal;
         line-height: 0.9;
+        color: $white;
     }
 
     cite {
       display: block;
       margin-top: $gutter/2;
+      color: $white;
       &:before {
         content: '—';
       }
     }
+}
+
+dl {
+  dd {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {

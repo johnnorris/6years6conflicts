@@ -1,6 +1,6 @@
 .footer {
     color: $grey-CC;
-    background: $grey-33;
+    background: $grey-11;
 
     .content {
       max-width: 100%;
@@ -35,7 +35,7 @@
     }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 900px) {
     .footer {
         small {
             margin-top: -23px;
@@ -43,7 +43,13 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-bottom: $gutter*1.5;
+  }
+}
+
+@media screen and (max-width: 650px) {
     .footer a {
         display: block;
 

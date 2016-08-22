@@ -8,19 +8,13 @@
 <meta name="description" content="{{ name }} - Six Years Six Conflicts is an exhibition coming 21st October to 30th October in London.">
 {% endblock %}
 
-<div class="conflict selected conflict--hero conflict--{{ name }}"></div>
-{% endmacro %}
-
-{% macro title(number, location, years) %}
-<h1 class="h3 conflict-title">
-    <span class="conflict-number">{{ number }}</span>
-    <span class="conflict-name h1">{{ location }}</span>
-    <span class="conflict-year">{{ years }}</span>
-</h1>
+<div class="conflict selected conflict--hero conflict--{{ name }}">
+  <h1 class="conflict-title brand">{{ name }}</h1>
+</div>
 {% endmacro %}
 
 {% macro subtitle(subtitle) %}
-<h2 class="conflict-subtitle h3">{{ subtitle | safe }}</h1>
+<h2 class="conflict-subtitle no-margin-top h3">{{ subtitle | safe }}</h1>
 {% endmacro %}
 
 {% macro body(excerpt, details) %}
@@ -37,7 +31,7 @@
         <a href="/libya/" class="conflict conflict--Libya">
             <span class="conflict-details">
                 <span class="conflict-number">i</span>
-                <span class="conflict-name">Libya</span>
+                <span class="conflict-name brand">Libya</span>
                 <span class="conflict-year">2011</span>
             </span>
         </a>
@@ -46,7 +40,7 @@
         <a href="/syria/" class="conflict conflict--Syria">
             <span class="conflict-details">
                 <span class="conflict-number">ii</span>
-                <span class="conflict-name">Syria</span>
+                <span class="conflict-name brand">Syria</span>
                 <span class="conflict-year">2012-13</span>
             </span>
         </a>
@@ -55,7 +49,7 @@
         <a href="/bahrain/" class="conflict conflict--Bahrain">
             <span class="conflict-details">
                 <span class="conflict-number">iii</span>
-                <span class="conflict-name">Bahrain</span>
+                <span class="conflict-name brand">Bahrain</span>
                 <span class="conflict-year">2013</span>
             </span>
         </a>
@@ -64,7 +58,7 @@
         <a href="/somalia/" class="conflict conflict--Somalia">
             <span class="conflict-details">
                 <span class="conflict-number">iv</span>
-                <span class="conflict-name">Somalia</span>
+                <span class="conflict-name brand">Somalia</span>
                 <span class="conflict-year">2014</span>
             </span>
         </a>
@@ -73,7 +67,7 @@
         <a href="/iraq/" class="conflict conflict--Iraq">
             <span class="conflict-details">
                 <span class="conflict-number">v</span>
-                <span class="conflict-name">Iraq</span>
+                <span class="conflict-name brand">Iraq</span>
                 <span class="conflict-year">2013-16</span>
             </span>
         </a>
@@ -82,7 +76,7 @@
         <a href="/burundi/" class="conflict conflict--Burundi">
             <span class="conflict-details">
                 <span class="conflict-number">vi</span>
-                <span class="conflict-name">Burundi</span>
+                <span class="conflict-name brand">Burundi</span>
                 <span class="conflict-year">2015</span>
             </span>
         </a>

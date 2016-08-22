@@ -20,14 +20,14 @@
   </p>
 
   <p>
-    For the last six years <a href="/about/">Rick Findler</a> has travelled to many of these countries as a freelance photojournalist to document what these people have had to witness and experience their entire lives.
+    For the last six years Rick Findler has travelled to many of these countries as a freelance photojournalist to document what these people have had to witness and experience their entire lives.
   </p>
 
   <p>
     <span class="brand">Six Years Six Conflicts</span> brings together a collection of Rick Findler's images and words from his time spent in some of the most dangerous places on the planet: Syria, Iraq, Somalia, Burundi, Bahrain and Libya.
   </p>
 
-  <div class="venue divide-top">
+  <div class="venue divide-top" id="venue">
     <h2>The Venue</h2>
     <p>
       The Republic Gallery<br>

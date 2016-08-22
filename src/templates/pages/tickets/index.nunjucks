@@ -1,0 +1,27 @@
+{% extends "layout.nunjucks" %}
+
+{% block title %}
+<title>Tickets - Six Years Six Conflicts</title>
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="Tickets - Six Years Six Conflicts is an exhibition coming 21st October to 30th October in London.">
+{% endblock %}
+
+{% block content %}
+
+<div id="page" class="content slim">
+    <h1 class="brand">Book tickets</h1>
+
+    <h2>Exhibition tickets - Free</h2>
+
+    <p>Entrance to the exhibition is absolutely free, please just come along to <a href="/exhibition/#venue">The Republic Gallery</a> and join us.</p>
+
+    <h2>Talk tickets - £5</h2>
+
+    <p>
+      We have limited spaces for the talk, so request that you book by email. See <a href="/talk/">the talk</a> page for more details.
+    </p>
+</div>
+
+{% endblock %}

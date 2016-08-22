@@ -1,5 +1,5 @@
 .nav {
-    position: relative;
+    position: fixed;
     z-index: 2;
 
     padding: $gutter/2;
@@ -7,7 +7,7 @@
 
     font-size: 18px;
     color: $white;
-    background: $grey-33;
+    background: $grey-11;
 
     a {
         display: inline-block;
@@ -38,7 +38,6 @@
     }
 
     @media screen and (max-width: 767px) {
-      position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
@@ -51,7 +50,6 @@
     }
 
     @media screen and (min-width: 768px) {
-      position: absolute;
       top: 0;
       left: 20vw;
       background: transparent;

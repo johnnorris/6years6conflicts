@@ -10,8 +10,6 @@
 {{ conflict.hero(name) }}
 
 <div id="page" class="content slim">
-    {{ conflict.title(number, name, years) }}
-
     {{ conflict.subtitle("Free Syrian Army rebels try and take control of a Syrian Military&nbsp;Airbase.") }}
 
     {{
@@ -26,5 +24,7 @@
       )
     }}
 </div>
+
+{{ conflict.conflicts() }}
 
 {% endblock %}

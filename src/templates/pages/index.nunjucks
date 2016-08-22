@@ -11,15 +11,30 @@
 {% block content %}
 
 <header class="home">
+  <div class="video">
+    <video width="100%" controls autoplay autostart>
+      <source src="/video/intro.mp4" type="video/mp4">
+    </video>
+    <button class="hide-video button">Skip intro</button>
+  </div>
+
   <div class="content slim">
     <h1 class="brand">Six&nbsp;Years<br>Six&nbsp;Conflicts</h1>
+    <p class="subheading">21st to 30th October in&nbsp;East&nbsp;London.</p>
+
     <h2>An exhibition by Rick&nbsp;Findler.</h2>
-    <h3>21st to 30th October in&nbsp;London.</h3>
 
     <div class="home-nav">
-      <a href="#conflicts" class="button">The Conflicts</a>
-      <a href="/exhibition" class="button">The Exhibition</a>
+      <a href="/conflicts/" class="button">The Conflicts</a>
+      <a href="/exhibition/" class="button">The Exhibition</a>
+      <a href="/talk/" class="button">The Talk</a>
     </div>
+
+    <h3 class="h5 tint">
+      Part of Photomonth International photography festival
+
+      <a href="http://2016.photomonth.org/" target="_blank" class="photomonth"></a>
+    </h3>
   </div>
 </header>
 

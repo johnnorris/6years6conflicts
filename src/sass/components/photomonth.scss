@@ -1,0 +1,12 @@
+.photomonth {
+  display: block;
+
+  width: 150px;
+  height: 35px;
+  margin: 10px 0 0 -9px;
+
+  background-image: url('http://2016.photomonth.org/images/photomonth_logo.png');
+  background-size: cover;
+  background-blend-mode: hard-light;
+  background-color: $grey-11;
+}

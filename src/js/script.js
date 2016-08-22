@@ -3,7 +3,7 @@
 
   if ($hero.length > 0 && $(window).innerWidth() > 600) {
     const origUrl = $hero.css('backgroundImage');
-    const heroUrl = origUrl.replace('/img/', '/img/hero/');
+    const heroUrl = origUrl.replace('/img/conflicts/', '/img/conflicts/hero/');
 
     $.ajax({
       url: heroUrl.replace('url("', '').replace('")', ''),
@@ -46,5 +46,46 @@
     $header.attr('class', `home conflict--${conflicts[number]}`);
 
     window.setTimeout(randomHomeImage, 1000 * 10);
+  }
+}());
+
+;(function handleVideo() {
+  const $container = $('.home .video');
+
+  if ($container.length > 0) {
+    const $hideVideo = $('.hide-video', $container);
+    const $video = $('video', $container);
+
+    if (window.localStorage && typeof window.localStorage.getItem === 'function') {
+      if (!window.localStorage.getItem('introSeen')) {
+        $hideVideo.show();
+        $video.show();
+      } else {
+        hideVideo(0);
+      }
+    }
+
+    function hideVideo(speed) {
+      $video[0].pause();
+      $container.fadeOut(speed);
+
+      if (window.localStorage && typeof window.localStorage.setItem === 'function') {
+        window.localStorage.setItem('introSeen', true);
+      }
+    }
+
+    function fadeOutVideo() {
+        if ($video[0].ended) {
+          hideVideo(500);
+        }
+
+        window.setTimeout(fadeOutVideo, 1000);
+    }
+
+    fadeOutVideo();
+
+    $hideVideo.click(() => {
+      hideVideo(500);
+    });
   }
 }());
