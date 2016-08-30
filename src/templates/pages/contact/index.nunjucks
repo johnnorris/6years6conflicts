@@ -1,5 +1,6 @@
 {% extends "layout.nunjucks" %}
-
+{% import "macros/exhibition.nunjucks" as exhibition %}
+{% import "macros/talk.nunjucks" as talk %}
 
 {% block title %}
 <title>Contact - Six Years Six Conflicts</title>
@@ -11,7 +12,7 @@
 
 {% block content %}
 
-<div id="page" class="content slim">
+<div class="page content slim">
   <h1 class="brand">Contact</h1>
 
   <p class="lede">If you have any questions, please get in touch with Rick using the details below.</p>
@@ -22,19 +23,9 @@
     Phone: 07816 352037
   </p>
 
-  <dl class="divide-top">
-    <dt class="h3">Exhibition</dt>
-    <dd>Six Years Six Conflicts</dd>
+  {{ exhibition.tickets() }}
 
-    <dt class="h3">Location</dt>
-    <dd>The Republic Gallery, 1 Clove Crescent, E14 2BA</dd>
-
-    <dt class="h3">Dates</dt>
-    <dd>21st - 30th October 2016</dd>
-
-    <dt class="h3">Price</dt>
-    <dd>Exhibition entrance is free, the talk is £5 on the door - <a href="/talk/">book here</a></dd>
-  </dl>
+  {{ talk.tickets() }}
 </div>
 
 {% endblock %}

@@ -9,7 +9,7 @@
 
 {{ conflict.hero(name) }}
 
-<div id="page" class="content slim">
+<div class="page content slim">
     {{ conflict.subtitle("Kurdish Special Forces fight against&nbsp;ISIS.") }}
 
     {{

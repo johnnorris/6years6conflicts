@@ -1,4 +1,6 @@
 {% extends "layout.nunjucks" %}
+{% import "macros/exhibition.nunjucks" as exhibition %}
+{% import "macros/talk.nunjucks" as talk %}
 
 {% block title %}
 <title>Tickets - Six Years Six Conflicts</title>
@@ -10,18 +12,12 @@
 
 {% block content %}
 
-<div id="page" class="content slim">
+<div class="page content slim">
     <h1 class="brand">Book tickets</h1>
 
-    <h2>Exhibition tickets - Free</h2>
+    {{ exhibition.tickets() }}
 
-    <p>Entrance to the exhibition is absolutely free, please just come along to <a href="/exhibition/#venue">The Republic Gallery</a> and join us.</p>
-
-    <h2>Talk tickets - £5</h2>
-
-    <p>
-      We have limited spaces for the talk, so request that you book by email. See <a href="/talk/">the talk</a> page for more details.
-    </p>
+    {{ talk.tickets() }}
 </div>
 
 {% endblock %}

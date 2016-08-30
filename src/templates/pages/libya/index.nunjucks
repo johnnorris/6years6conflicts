@@ -9,8 +9,8 @@
 
 {{ conflict.hero(name) }}
 
-<div id="page" class="content slim">
-    {{ conflict.subtitle("Rebels fight against Gaddafi forces during the&nbsp;Libyan&nbsp;revolution.") }}
+<div class="page content slim">
+    {{ conflict.subtitle("Rebels fight against Gaddafi forces during the Libyan&nbsp;revolution.") }}
 
     {{
       conflict.body(

@@ -1,5 +1,6 @@
 {% extends "layout.nunjucks" %}
-
+{% import "macros/venue.nunjucks" as venue %}
+{% import "macros/exhibition.nunjucks" as exhibition %}
 
 {% block title %}
 <title>Exhibition - Six Years Six Conflicts</title>
@@ -11,12 +12,12 @@
 
 {% block content %}
 
-<div id="page" class="content slim">
+<div class="page content slim">
   <h1 class="brand">Six&nbsp;Years<br>Six&nbsp;Conflicts</h1>
-  <p class="subheading">Friday 21st - 30th of October.</p>
+  {{ exhibition.time('subheading') }}
 
   <p class="lede">
-    Over recent years Europe has seen an unprecedented influx of refugees landing on it's shores after fleeing the worst violence the world has seen in a generation.
+    Over recent years Europe has seen an unprecedented influx of refugees landing on its shores after fleeing the worst violence the world has seen in a generation.
   </p>
 
   <p>
@@ -27,26 +28,10 @@
     <span class="brand">Six Years Six Conflicts</span> brings together a collection of Rick Findler's images and words from his time spent in some of the most dangerous places on the planet: Syria, Iraq, Somalia, Burundi, Bahrain and Libya.
   </p>
 
-  <div class="venue divide-top" id="venue">
-    <h2>The Venue</h2>
-    <p>
-      The Republic Gallery<br>
-      Capstan House Atrium<br>
-      1 Clove Crescent<br>
-      London<br>
-      E14 2BA
-    </p>
+  {{ exhibition.tickets() }}
 
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1844927908714!2d-0.006854184207246455!3d51.50983117963556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602abe1c071c1%3A0xbac45f089ff634c1!2s1+Clove+Cres%2C+Poplar%2C+London+E14+2BA!5e0!3m2!1sen!2suk!4v1471552079807" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-
-    <p>Republic Gallery is a very unique venue directly next to East India DLR station.</p>
-
-    <p>It is situated in the heart of Republic, a six acre commercial and retail estate located in East London.</p>
-    <p>An underground car park is available. </p>
-
-  </div>
+  {{ venue.venue() }}
 </div>
+
 
 {% endblock %}

@@ -1,20 +1,31 @@
 {% extends "layout.nunjucks" %}
+{% import "macros/venue.nunjucks" as venue %}
+{% import "macros/talk.nunjucks" as talk %}
+
+{% block title %}
+<title>The Talk - Six Years Six Conflicts</title>
+{% endblock %}
+
+{% block description %}
+<meta name="description" content="The Talk - Six Years Six Conflicts is an exhibition coming 21st October to 30th October in London.">
+{% endblock %}
 
 {% block content %}
 
-<div id="page" class="content slim">
+<div class="page content slim">
     <h1 class="brand">The Talk</h1>
+    {{ talk.time('subheading') }}
 
-    <p>You are invited to come and listen to Rick Findler talk about what it is like to cover conflict as a freelance photojournalist in today's world.</p>
+    <p class="lede">You are invited to come and listen to Rick Findler talk about what it is like to cover conflict as a freelance photojournalist in today's world.</p>
 
     <p>Sometimes working in extreme conditions, dodging bullets and running from mortar fire, Rick's talk offers an extremely exciting, rewarding and violent insight into what is really happening in the world whilst opening peoples eyes to the difficulties and risks war photographers and journalists go through on a daily basis.</p>
 
     <p>The talk will be accompanied by pictures and video footage, and will give you a rare insight into the extremely moving, dangerous and sometimes humorous world of working in some of the most dangerous countries on the planet.</p>
 
-    <h2>Book tickets</h2>
+    {{ talk.tickets() }}
 
-    <p>Please book your place here: <a href="mailto:talk@6years6conflict.co.uk">talk@6years6conflict.co.uk</a>.</p>
-    <p>There will be a £5.00 charge on entry.</p>
+    {{ venue.venue() }}
 </div>
+
 
 {% endblock %}

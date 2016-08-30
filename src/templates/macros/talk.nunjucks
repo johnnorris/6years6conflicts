@@ -1,0 +1,11 @@
+{% macro time(className="") %}
+  <p class="{{className}}">Sunday 29th of October 17:00&nbsp;-&nbsp;18:00.</p>
+{% endmacro %}
+
+{% macro tickets() %}
+  <h2>Talk tickets - £5</h2>
+  {{ time() }}
+  <p>Venue: <a href="/talk/#venue">The Republic Gallery</a></p>
+  <p>Please book your place here: <a href="mailto:talk@6years6conflict.co.uk">talk@6years6conflict.co.uk</a>.</p>
+  <p>There will be a £5.00 charge on entry.</p>
+{% endmacro %}

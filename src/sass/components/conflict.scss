@@ -5,7 +5,7 @@
     > li {
         float: left;
         width: 50%;
-        height: 33vh;
+        height: 31vh;
     }
 }
 
@@ -13,7 +13,7 @@
     position: relative;
     float: left;
     width: 100%;
-    height: 33vh;
+    height: 31vh;
     margin: 0;
     background: $grey-11;
 
@@ -28,7 +28,7 @@
 
         font-size: $font-small;
 
-        color: $white-75;
+        color: $white;
 
         & > * {
           display: none;
@@ -74,7 +74,6 @@
     &--hero {
         height: 50vh;
         border-bottom: solid 2px $white;
-        cursor: pointer;
 
         .conflict-title {
           position: absolute;
@@ -90,60 +89,45 @@
           text-shadow: 0 -10px 40px $black;
           opacity: 0.97;
         }
-
-        &.zoom {
-          position: fixed;
-          top: 0;
-          left: 0;
-          height: 100vh;
-          width: 100vw;
-          z-index: 1000;
-
-          .conflict-title {
-            top: auto;
-            bottom: 0;
-            transform: translateY(0);
-          }
-        }
     }
 
     &--Libya {
-        background-image: url('/img/conflicts/Libya.jpg');
+        background-image: url('/img/conflicts/Libya.jpg?v=201608242231');
         background-size: cover;
         background-position: 95% 15%;
     }
 
     &--Syria {
-        background-image: url('/img/conflicts/Syria.jpg');
+        background-image: url('/img/conflicts/Syria.jpg?v=201608242231');
         background-size: cover;
         background-position: 80% 50%;
     }
 
     &--Bahrain {
-        background-image: url('/img/conflicts/Bahrain.jpg');
+        background-image: url('/img/conflicts/Bahrain.jpg?v=201608242231');
         background-size: cover;
         background-position: 20% 60%;
     }
 
     &--Somalia {
-        background-image: url('/img/conflicts/Somalia.jpg');
+        background-image: url('/img/conflicts/Somalia.jpg?v=201608242231');
         background-size: cover;
         background-position: 49% 40%;
     }
 
     &--Iraq {
-        background-image: url('/img/conflicts/Iraq.jpg');
+        background-image: url('/img/conflicts/Iraq.jpg?v=201608242231');
         background-size: cover;
         background-position: center center;
     }
 
     &--Burundi {
-        background-image: url('/img/conflicts/Burundi.jpg');
+        background-image: url('/img/conflicts/Burundi.jpg?v=201608242231');
         background-size: cover;
         background-position: 60% 20%;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
       &-title {
         margin-top: 0;
       }

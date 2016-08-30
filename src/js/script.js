@@ -17,17 +17,9 @@
 ;(function selectCurrentPage() {
   let path = window.location.pathname;
 
+  if (path === '/tickets/') return;
+
   $(`a[href="${path}"]`).addClass('selected');
-}());
-
-
-;(function zoomImage() {
-  const $hero = $('.conflict--hero');
-
-  // no point zooming on a low res image
-  if ($hero.length > 0 && $(window).innerWidth() > 600) {
-    $hero.click(() => $hero.toggleClass('zoom'));
-  }
 }());
 
 ;(function mapClick() {

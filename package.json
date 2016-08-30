@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp && cd public && open http://localhost:6789 && python -m SimpleHTTPServer 6789",
+    "watch": "gulp && gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,7 +17,11 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.13.2",
     "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-htmlmin": "^2.0.0",
     "gulp-image-resize": "^0.10.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-minify": "0.0.14",
     "gulp-nunjucks-render": "^2.0.0"
   }
 }

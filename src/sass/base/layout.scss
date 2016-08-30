@@ -6,7 +6,7 @@ body {
 .content {
     clear: left;
     max-width: 960px;
-    padding: $gutter;
+    padding: $gutter $gutter/1.5;
 
     p {
       max-width: 45rem;
@@ -18,15 +18,15 @@ body {
         margin-right: auto;
     }
 
-    @media screen and (max-width: 320px) {
-        padding: $gutter $gutter/2;
+    @media screen and (min-width: 768px) {
+        padding: $gutter $gutter*1.5;
     }
 
     margin: 0 auto;
     text-align: left;
 }
 
-#page {
+.page {
     &:after {
         content: '...';
         display: block;
