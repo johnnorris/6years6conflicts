@@ -1,5 +1,5 @@
 {% macro time(className="") %}
-  <p class="{{className}}">Sunday 29th of October 17:00&nbsp;-&nbsp;18:00.</p>
+  <p class="{{className}}">Saturday 29th of October 17:00&nbsp;-&nbsp;18:00.</p>
 {% endmacro %}
 
 {% macro tickets() %}
