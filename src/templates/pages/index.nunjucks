@@ -32,9 +32,10 @@
 
     <h3 class="h5 tint">
       Part of Photomonth International photography festival
-
-      <a href="http://2016.photomonth.org/" target="_blank" class="photomonth"></a>
     </h3>
+
+    <a href="http://www.rps.org/" target="_blank" class="supporter rps"></a>
+    <a href="http://2016.photomonth.org/" target="_blank" class="supporter photomonth"></a>
   </div>
 </header>
 

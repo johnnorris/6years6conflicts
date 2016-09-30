@@ -92,37 +92,37 @@
     }
 
     &--Libya {
-        background-image: url('/img/conflicts/Libya.jpg?v=201608242231');
+        background-image: url('/img/conflicts/Libya.jpg?v=201609280819');
         background-size: cover;
         background-position: 95% 15%;
     }
 
     &--Syria {
-        background-image: url('/img/conflicts/Syria.jpg?v=201608242231');
+        background-image: url('/img/conflicts/Syria.jpg?v=201609280819');
         background-size: cover;
         background-position: 80% 50%;
     }
 
     &--Bahrain {
-        background-image: url('/img/conflicts/Bahrain.jpg?v=201608242231');
+        background-image: url('/img/conflicts/Bahrain.jpg?v=201609280819');
         background-size: cover;
         background-position: 20% 60%;
     }
 
     &--Somalia {
-        background-image: url('/img/conflicts/Somalia.jpg?v=201608242231');
+        background-image: url('/img/conflicts/Somalia.jpg?v=201609280819');
         background-size: cover;
         background-position: 49% 40%;
     }
 
     &--Iraq {
-        background-image: url('/img/conflicts/Iraq.jpg?v=201608242231');
+        background-image: url('/img/conflicts/Iraq.jpg?v=201609280819');
         background-size: cover;
         background-position: center center;
     }
 
     &--Burundi {
-        background-image: url('/img/conflicts/Burundi.jpg?v=201608242231');
+        background-image: url('/img/conflicts/Burundi.jpg?v=201609280819');
         background-size: cover;
         background-position: 60% 20%;
     }
@@ -161,6 +161,10 @@
     }
 
     @media screen and (min-width: 1024px) {
+      &--hero {
+        height: 70vh;
+      }
+
       &--hero &-title {
         font-size: $font-hero-4;
       }
