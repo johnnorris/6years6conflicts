@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp",
     "start": "cd public && open http://localhost:6789 && python -m SimpleHTTPServer 6789",
-    "watch": "gulp && gulp watch",
+    "watch": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

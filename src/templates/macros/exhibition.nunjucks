@@ -3,8 +3,14 @@
 {% endmacro %}
 
 {% macro tickets() %}
-  <h2>Exhibition entrance - Free</h2>
+  <h2>Exhibition entrance - Free / no ticket necessary</h2>
   {{ time() }}
+  <p>Opening times:</p>
+  <ul>
+    <li>Weekdays: 12:00 - 19:00</li>
+    <li>Weekends: 10:00 - 19:00</li>
+    <li>Saturday 29th: 10:00 - 16:00</li>
+  </ul>
   <p>Venue: <a href="/exhibition/#venue">The Republic Gallery</a></p>
   <p>Entrance to the exhibition is absolutely free, please just come along to The Republic Gallery and join us.</p>
 {% endmacro %}
